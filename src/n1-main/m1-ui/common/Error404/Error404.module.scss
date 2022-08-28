@@ -1,0 +1,22 @@
+.container {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Barlow Condensed', sans-serif;
+
+  .text {
+    font-size: 55px;
+    font-weight: bold;
+    background-color: #064003;
+    color: greenyellow;
+    padding: 10px 20px;
+    border: 2px solid greenyellow;
+    box-shadow: 0 0 10px 5px #000000;
+    border-radius: 5px;
+
+    span {
+      padding: 0 4px;
+      font-weight: normal;
+    }
+  }
+}
