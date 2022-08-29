@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import {Main} from './Main';
 import {HashRouter} from 'react-router-dom';
 import {Provider} from 'react-redux';
