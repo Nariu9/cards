@@ -1,0 +1,46 @@
+.button {
+  color: #fff;
+  padding: 12px 20px;
+  margin: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+    background: #A9E0F4FF;
+    border: 1px solid #A9E0F4FF;
+  }
+}
+
+.default {
+  background: dodgerBlue;
+  border: 1px solid dodgerBlue;
+
+  &:hover:enabled {
+    box-shadow: 0 0 0 15px transparent;
+    animation: pulse1 1s;
+  }
+
+  @keyframes pulse1 {
+    from {
+      box-shadow: 0 0 0 0 dodgerBlue;
+    }
+
+  }
+}
+
+.red {
+  background: #ED5464FF;
+  border: 1px solid #ED5464FF;
+
+  &:hover:enabled {
+    box-shadow: 0 0 0 15px transparent;
+    animation: pulse2 1s;
+  }
+
+  @keyframes pulse2 {
+    from {
+      box-shadow: 0 0 0 0 #ED5464FF;
+    }
+  }
+}

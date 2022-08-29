@@ -1,0 +1,22 @@
+.select {
+  border: 1px solid dodgerBlue;
+  border-radius: 5px;
+  padding: 8px 3.5em 8px 8px;
+  appearance: none;
+  transition: .3s;
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+  linear-gradient(135deg, gray 50%, transparent 50%),
+  linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 16px) calc(1em + 1px),
+  calc(100% - 11px) calc(1em + 1px),
+  calc(100% - 2.5em) 0.4em;
+  background-size: 5px 5px,
+  5px 5px,
+  1px 1.5em;
+  background-repeat: no-repeat;
+
+  &:focus {
+    box-shadow: 0 0 8px 0 dodgerBlue;
+    outline: 0;
+  }
+}

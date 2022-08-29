@@ -1,0 +1,68 @@
+.container {
+  width: fit-content;
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+
+  .checkbox {
+    display: none;
+
+    &:checked {
+      ~ {
+        .checkmark {
+          background-color: dodgerBlue;
+
+          &:after {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .checkbox {
+      ~ {
+        .checkmark {
+          box-shadow: 0 0 5px 0 dodgerBlue;
+        }
+      }
+    }
+  }
+
+  .checkmark {
+    &:after {
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  .span {
+    margin: 5px;
+  }
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  border: 1px solid #343F49;
+  background-color: white;
+  transition: 0.3s ease;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}
